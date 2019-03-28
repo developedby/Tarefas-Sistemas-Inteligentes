@@ -1,7 +1,7 @@
 package sistema;
 
 import ambiente.*;
-import problemaEnuncT02.*;
+import problema.*;
 import comuns.*;
 import static comuns.PontosCardeais.*;
 import java.util.*;
@@ -20,7 +20,7 @@ public class Agente implements PontosCardeais {
     /* @todo T2: fazer uma sequencia de acoes a ser executada em deliberar
        e armazena-la no atributo plan[]
     */
-    int plan[] = {N,N,N,NE,E,E,E,E,E,E,NE,N};
+    int plan[] = {N,N,N,NE,L,L,L,L,L,L,NE,N};
     double custo;
     static int ct = -1;
            
@@ -31,19 +31,19 @@ public class Agente implements PontosCardeais {
         custo = 0;
         //@todo T2: crencas do agente a respeito do labirinto
         prob.criarLabirinto(9, 9);
-        prob.labir.porParedeVertical(0, 1, 0);
-        prob.labir.porParedeVertical(0, 0, 1);
-        prob.labir.porParedeVertical(5, 8, 1);
-        prob.labir.porParedeVertical(5, 5, 2);
-        prob.labir.porParedeVertical(8, 8, 2);
-        prob.labir.porParedeHorizontal(4, 7, 0);
-        prob.labir.porParedeHorizontal(7, 7, 1);
-        prob.labir.porParedeHorizontal(3, 5, 2);
-        prob.labir.porParedeHorizontal(3, 5, 3);
-        prob.labir.porParedeHorizontal(7, 7, 3);
-        prob.labir.porParedeVertical(6, 7, 4);
-        prob.labir.porParedeVertical(5, 6, 5);
-        prob.labir.porParedeVertical(5, 7, 7);
+        prob.crencaLabir.porParedeVertical(0, 1, 0);
+        prob.crencaLabir.porParedeVertical(0, 0, 1);
+        prob.crencaLabir.porParedeVertical(5, 8, 1);
+        prob.crencaLabir.porParedeVertical(5, 5, 2);
+        prob.crencaLabir.porParedeVertical(8, 8, 2);
+        prob.crencaLabir.porParedeHorizontal(4, 7, 0);
+        prob.crencaLabir.porParedeHorizontal(7, 7, 1);
+        prob.crencaLabir.porParedeHorizontal(3, 5, 2);
+        prob.crencaLabir.porParedeHorizontal(3, 5, 3);
+        prob.crencaLabir.porParedeHorizontal(7, 7, 3);
+        prob.crencaLabir.porParedeVertical(6, 7, 4);
+        prob.crencaLabir.porParedeVertical(5, 6, 5);
+        prob.crencaLabir.porParedeVertical(5, 7, 7);
 
         //@todo T2: crencas do agente: Estado inicial, objetivo e atual
         prob.defEstIni(8,0);
@@ -62,10 +62,11 @@ public class Agente implements PontosCardeais {
         ct++;
         
         // Executa a proxima acao do plano
-        executarIr(plano[ct]);
-
+        executarIr(plan[ct]);
+        System.out.println("--- Ação executada! ---");
+        estAtu = sensorPosicao();
         // Incrementa o custo acumulado
-        if (Arrays.asList(N,L,S,O).contains(plano[ct])) {
+        if (Arrays.asList(N,L,S,O).contains(plan[ct])) {
             custo += 1;
         }
         else {
@@ -73,7 +74,12 @@ public class Agente implements PontosCardeais {
         }
         
         // Imprime o que foi pedido
-        
+        printaMapa();
+        System.out.println("Estado atual: " + estAtu.getLin() + ", " + estAtu.getCol());
+        System.out.println("Ações possíveis: " + Arrays.toString(prob.acoesPossiveis(estAtu)));
+        System.out.println("ct = " + ct + " de " + (plan.length-1));
+        System.out.println("Ação escolhida = " + acao[plan[ct]]);
+        System.out.println("Custo até o momento: " + custo + "\n");
 
         // Verifica se terminou
         if (ct >= plan.length-1) {
@@ -135,8 +141,45 @@ public class Agente implements PontosCardeais {
                 return new Estado(est.getLin()-1, est.getCol()-1);
             }
         }
-        else {
-            return est;
+        return est;
+    }
+
+    public void printaMapa()
+    {
+        System.out.println("Mapa de acordo com a crença do agente:");
+        // imprime números das colunas
+        System.out.print("   ");
+        for (int col = 0; col < prob.crencaLabir.getMaxCol(); col++) {
+            System.out.printf(" %2d ", col);
+        }
+        System.out.print("\n");
+        for (int lin = 0; lin < prob.crencaLabir.getMaxLin(); lin++) {
+            System.out.print("   ");
+            for (int col = 0; col < prob.crencaLabir.getMaxCol(); col++) {
+                System.out.print("+---");
+            }
+            System.out.print("+\n");
+            System.out.printf("%2d ", lin);
+            for (int col = 0; col < prob.crencaLabir.getMaxCol(); col++) {
+                if (prob.crencaLabir.parede[lin][col] == 1) {
+                    System.out.print("|XXX");  // desenha parede
+                } else if (estAtu.getLin() == lin && estAtu.getCol() == col) {
+                    System.out.print("| A ");  // desenha agente
+                } else if (prob.estObj.getLin() == lin && prob.estObj.getCol() == col) {
+                    System.out.print("| G ");
+                } else {
+                    System.out.print("|   ");  // posicao vazia
+                }
+            }
+            System.out.print("|");
+            if (lin == (prob.crencaLabir.getMaxLin() - 1)) {
+                System.out.print("\n   ");
+                for (int x = 0; x < prob.crencaLabir.getMaxCol(); x++) {
+                    System.out.print("+---");
+                }
+                System.out.println("+\n");
+            }
+            System.out.print("\n");
         }
     }
 }    
