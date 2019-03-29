@@ -1,0 +1,11 @@
+2 - Environment → classes Model e View
+    Agent → class Agente
+    Sensors → método Estado Agente.sensorPosicao()
+    Actuators → método int Agente.executarIr(int direcao)
+    State → método int[] Model.lerPos()
+    Goals → variável Model.posObj
+
+3 - .1 - infinitos
+    .2 - (tamanho do grid = 81) - (paredes = 28) = 53
+    .3 - que as ações do plano serão possíveis em seu respectivo estado
+    .4 - não, o agente vai ter concepções não confiáveis do ambiente, as divergências podem vir do comportamento não determinístico do sensor do agente.
