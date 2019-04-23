@@ -22,7 +22,7 @@ public class TreeNode {
 
     public TreeNode(TreeNode pai) {
         this.parent = pai;
-            }
+    }
 
     public Estado getState() {
         return st;
