@@ -6,6 +6,7 @@
 package sistema;
 
 import ambiente.*;
+import java.util.Scanner;
 
 /**
  *
@@ -35,7 +36,7 @@ public class Main {
         model.setObj(2, 8);
         
         Scanner sc = new Scanner(System.in);
-        System.out.println("Escolha o algoritmo de busca\n\t1. Custo Uniforme\n\t2. A* heuristica 1\n\t3. A* heuristica 2\n");
+        System.out.println("Escolha o algoritmo de busca\n\t1. Custo Uniforme\n\t2. A* heuristica 1\n\t3. A* heuristica 2");
         int algoritmo_escolhido = sc.nextInt();
 
         // Cria um agente

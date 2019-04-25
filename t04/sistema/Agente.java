@@ -20,7 +20,7 @@ public class Agente implements PontosCardeais {
     Estado estAtu; // guarda o estado atual (posição atual do agente)
 
     int[] plano;
-    double custo;
+    float custo;
     static int ct = -1;
            
     public Agente(Model m, int alg) {
@@ -50,6 +50,8 @@ public class Agente implements PontosCardeais {
         estAtu = prob.estIni;
 
         plano = criaPlano(prob, alg);
+        for (int move: plano)
+            System.out.println(move);
     }
     
     /**Escolhe qual ação (UMA E SOMENTE UMA) será executada em um ciclo de raciocínio
@@ -64,7 +66,7 @@ public class Agente implements PontosCardeais {
         System.out.println("--- Ação executada! ---");
         estAtu = sensorPosicao();
         // Incrementa o custo acumulado
-        if (Arrays.asList(N,L,S,O).contains(plan[ct])) {
+        if (Arrays.asList(N,L,S,O).contains(plano[ct])) {
             custo += 1;
         }
         else {
@@ -75,12 +77,12 @@ public class Agente implements PontosCardeais {
         printaMapa();
         System.out.println("Estado atual: " + estAtu.getLin() + ", " + estAtu.getCol());
         System.out.println("Ações possíveis: " + Arrays.toString(prob.acoesPossiveis(estAtu)));
-        System.out.println("ct = " + ct + " de " + (plan.length-1));
-        System.out.println("Ação escolhida = " + acao[plan[ct]]);
+        System.out.println("ct = " + ct + " de " + (plano.length-1));
+        System.out.println("Ação escolhida = " + acao[plano[ct]]);
         System.out.println("Custo até o momento: " + custo + "\n");
 
         // Verifica se terminou
-        if (ct >= plan.length-1) {
+        if (ct >= plano.length-1) {
             // Se terminou, verifica se alcançou o objetivo
             if (prob.testeObjetivo(sensorPosicao())) {
                 System.out.println("\n\nO agente alcançou o objetivo!");
@@ -152,105 +154,134 @@ public class Agente implements PontosCardeais {
     }
 
     public int[] criaPlano(Problema prob, int alg) {
-        // Custo uniforme
-        if (alg == 1) { 
-            TreeNode arvore_busca = new TreeNode(null);
-            boolean alcancou_objetivo = false;
-            PriorityQueue<TreeNode> fronteira = new PriorityQueue<TreeNode>(81, (a,b) -> b.gn - a.gn); // Ordena pelo menor custo
-            Set<int> ja_explorados = new Set<int>; // Estados ja explorados
-            TreeNode no_caminho; // variavel para reconstruir o caminho
+        // Usuario entrou com lixo
+        if (alg > 3 || alg < 1) {
+            System.out.println("Algoritmo escolhido não é válido!");
+            System.exit(1);
+        }
 
-            // Inicializa a cabeca da arvore
-            arvore_busca.setState(prob.estIni);
-            arvore_busca.setGn(0);
-            arvore_busca.setAction(null);
-            fronteira.add(arvore_busca);
+        TreeNode arvore_busca = new TreeNode(null);
+        boolean alcancou_objetivo = false;
+        fnComparator comparador_nos = new fnComparator();
+        PriorityQueue<TreeNode> fronteira = new PriorityQueue<TreeNode>(81, comparador_nos); 
+        Set<Estado> ja_explorados = new HashSet<Estado>(); // Estados ja explorados
+        TreeNode no_caminho = null; // variavel para reconstruir o caminho
+    
+        // Inicializa a cabeca da arvore
+        arvore_busca.setState(prob.estIni);
+        arvore_busca.setGn(0);
+        arvore_busca.setHn(calculaHeuristica(arvore_busca.getState(), prob.estObj, alg));
+        arvore_busca.setAction(-1);
+        fronteira.add(arvore_busca);
 
-            // Executa o Custo Uniforme
-            while (!fronteira.isEmpty() && !alcancou_objetivo) {
-                TreeNode explorado = fronteira.poll();
-                // Se chegou no objetivo, para
-                if (explorado.st == prob.estObj) {
-                    alcancou_objetivo = true;
-                    no_caminho = explorado;
-                }
-                else {
-                    ja_explorados.add(explorado);
-                    int[] acoes = prob.acoesPossiveis(explorado.st);
-                    // Para cada estado diferente diretamente alcancavel
-                    for (int i=0; i<acoes.size(); i++) {
-                        if (acoes[i] == 1) {
-                            // Constroi o filho
-                            TreeNode filho = explorado.addChild();
-                            filho.setState(prob.suc(explorado.st, i));
-                            filho.setGn(explorado.getGn() + getCusto(i));
-                            filho.setAction(i);
+        // Executa a busca
+        while (!fronteira.isEmpty() && !alcancou_objetivo) {
+            TreeNode explorado = fronteira.poll();
+            ja_explorados.add(explorado.getState());
+            //System.out.printf("Estado tirado da fronteira: (%d, %d)\n", explorado.getState().getLin(), explorado.getState().getCol());
+            // Se chegou no objetivo, para
+            if (explorado.getState().igualAo(prob.estObj)) {
+                alcancou_objetivo = true;
+                no_caminho = explorado;
+            }
+            else {
+                int[] acoes = prob.acoesPossiveis(explorado.getState());
+                // Para cada estado diferente diretamente alcancavel
+                for (int i=0; i<acoes.length; i++) {
+                    if (acoes[i] != -1) {
+                        // Constroi o filho
+                        TreeNode filho = explorado.addChild();
+                        filho.setState(prob.suc(explorado.getState(), i));
+                        filho.setGn(explorado.getFn() + custoAcao(i));
+                        filho.setHn(calculaHeuristica(filho.getState(), prob.estObj, alg));
+                        filho.setAction(i);
 
-                            // Adiciona na fronteira se for vantajoso
-                            // Se nao foi explorado ainda
-                            if (!ja_explorados.contains(filho.st)) { 
-                                TreeNode elem_ja_na_fronteira = procuraEstadoNaFronteira(fronteira, filho.st);
-                                // Se nao ta na fronteira
-                                if (elem_ja_na_fronteira == null) { 
-                                    fronteira.add(filho);
-                                } else {
-                                    // Se o novo cara é mais barato
-                                    if (filho.gn < elem_ja_na_fronteira.gn) {
-                                        fronteira.remove(elem_ja_na_fronteira);
-                                        fronteira.add(filho);
-                                    }
-                                }
+                        // Adiciona na fronteira se for vantajoso
+                        // Se nao foi explorado ainda
+                        if (buscaEstado(filho.getState(), ja_explorados) == null) {
+                            //System.out.printf("Estado ainda nao explorado: (%d, %d)\n", filho.getState().getLin(), filho.getState().getCol());
+                            TreeNode elem_ja_na_fronteira = buscaTreeNode(filho.getState(), fronteira);
+                            // Se nao ta na fronteira
+                            if (elem_ja_na_fronteira == null) { 
+                                fronteira.add(filho);
+                                //System.out.printf("Estado novo encontrado: (%d, %d)\n", filho.getState().getLin(), filho.getState().getCol());
+                            }
+                            // Se o novo cara é mais barato
+                            else if (filho.getFn() < elem_ja_na_fronteira.getFn()){
+                                fronteira.remove(elem_ja_na_fronteira);
+                                fronteira.add(filho);
+                                //System.out.printf("Estado substituido na fronteira: (%d, %d)\n", filho.getState().getLin(), filho.getState().getCol());
                             }
                         }
                     }
                 }
             }
-            ArrayList<int> plano_lista = new ArrayList<int>()
-            // Reconstroi caminho
-            while (no_caminho != null) {
-                plano_lista.add(0, no_caminho.acao);
-                no_caminho = no_caminho.parent;
-            }
-            return plano_lista.toArray(new int[plano_lista.size()]);
         }
 
-        // A* fazendo uma diagonal e uma reta
-        else if (alg == 2) { 
-        
+        if (alcancou_objetivo == false) {
+            System.out.println("Não conseguiu encontrar o objetivo!");
+            System.exit(1);
         }
 
-        // A* fazendo duas retas
-        else if (alg == 3) { 
-
+        List<Integer> plano_lista = new ArrayList<Integer>();
+        // Reconstroi caminho (ultimo passo no comeco)
+        while (no_caminho.getParent() != null) {
+            plano_lista.add(no_caminho.getAction());
+            no_caminho = no_caminho.getParent();
         }
-
-        // Usuario entrou com lixo
-        else {
-            System.out.println("Algoritmo escolhido não é válido!");
-            System.exit();
-        }
+        Collections.reverse(plano_lista);
+        return plano_lista.stream().mapToInt(Integer::intValue).toArray();
     }
 
-    public double getCusto(int acao) {
-        if (acao==N || acao==L || acao=O || acao==S) {
-            return 1;
+
+    public float custoAcao(int acao) {
+        if (acao==N || acao==L || acao==O || acao==S) {
+            return 1f;
         }
         else if (acao==NE || acao==SE || acao==SO || acao==NO) {
-            return 1.5;
+            return 1.5f;
         }
         else {
-            return 0;
+            return 0f;
         }
     }
 
-    public TreeNode procuraEstadoNaFronteira (PriorityQueue<TreeNode> fronteira, Estado st) {
-        Iterator iter = fronteira.iterator();
+    public TreeNode buscaTreeNode(Estado st, Iterable<TreeNode> itbl) {
+        Iterator iter = itbl.iterator();
         while(iter.hasNext()) {
-            TreeNode node = iter.next();
-            if (node.st == st) {
+            TreeNode node = (TreeNode)iter.next();
+            if (node.getState().igualAo(st)) {
                 return node;
             }
         }
         return null;
+    }
+
+    public Estado buscaEstado(Estado searched, Iterable<Estado> itbl) {
+        Iterator iter = itbl.iterator();
+        while(iter.hasNext()) {
+            Estado st = (Estado)iter.next();
+            if (st.igualAo(searched)) {
+                return st;
+            }
+        }
+        return null;
+    }
+
+    public float calculaHeuristica (Estado st, Estado obj, int alg) {
+        if (alg == 1) {
+            return 0;
+        }
+        else if (alg == 2) {
+            int dist_col = Math.abs(st.getCol()-obj.getCol());
+            int dist_lin = Math.abs(st.getLin()-obj.getLin());
+            return Math.min(dist_col, dist_lin)*1.5f + Math.abs(dist_col - dist_lin)*1f;
+        }
+        else if (alg == 3) {
+            return Math.abs(st.getLin()-obj.getLin());
+        }
+        else {
+            return 0;
+        }
     }
 }    
