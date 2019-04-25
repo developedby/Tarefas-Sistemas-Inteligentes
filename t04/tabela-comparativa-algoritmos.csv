@@ -1,0 +1,4 @@
+,Nº nós gerados,ct_ja_explorados,ct_descartados_front,Nós guardados na memória,plano,custo final
+Custo Uniforme,199,95,54,50,"N,N,N,NE,L,L,L,L,NE,NE,L",12.5
+A* distancia horizontal,98,39,25,34,"N,N,N,NE,L,L,L,L,NE,NE,L",12.5
+A* distancia retangular,55,15,13,27,"N,N,N,NE,L,L,L,L,NE,NE,L",12.5

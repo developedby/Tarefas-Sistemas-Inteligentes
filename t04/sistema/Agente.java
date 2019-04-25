@@ -18,15 +18,15 @@ public class Agente implements PontosCardeais {
     Model model;
     Problema prob; // formulacao do problema
     Estado estAtu; // guarda o estado atual (posição atual do agente)
-
+    int alg; // açgoritmo de busca escolhido
     int[] plano;
     float custo;
     static int ct = -1;
-           
+
     public Agente(Model m, int alg) {
         this.model = m;
         prob = new Problema();
- 
+        this.alg = alg;
         custo = 0;
         //crencas do agente a respeito do labirinto
         prob.criarLabirinto(9, 9);
@@ -49,18 +49,23 @@ public class Agente implements PontosCardeais {
         prob.defEstObj(2,8);
         estAtu = prob.estIni;
 
-        plano = criaPlano(prob, alg);
-        for (int move: plano)
-            System.out.println(move);
     }
-    
+
     /**Escolhe qual ação (UMA E SOMENTE UMA) será executada em um ciclo de raciocínio
      * @return 1 enquanto o plano não acabar; -1 quando acabar
      */
     public int deliberar() {
         // Incrementa contador de ações
         ct++;
-        
+        if (ct == 0) {
+          plano = criaPlano(prob, alg);
+          System.out.printf("Plano: ");
+          for (int move: plano)
+              System.out.printf(acao[move] + ' ');
+        }
+
+        this.model.desenhar();
+
         // Executa a proxima acao do plano
         executarIr(plano[ct]);
         System.out.println("--- Ação executada! ---");
@@ -72,13 +77,13 @@ public class Agente implements PontosCardeais {
         else {
             custo += 1.5;
         }
-        
+
         // Imprime o que foi pedido
-        printaMapa();
+        // printaMapa();
         System.out.println("Estado atual: " + estAtu.getLin() + ", " + estAtu.getCol());
         System.out.println("Ações possíveis: " + Arrays.toString(prob.acoesPossiveis(estAtu)));
         System.out.println("ct = " + ct + " de " + (plano.length-1));
-        System.out.println("Ação escolhida = " + acao[plano[ct]]);
+        System.out.println("Ação executada = " + acao[plano[ct]]);
         System.out.println("Custo até o momento: " + custo + "\n");
 
         // Verifica se terminou
@@ -96,7 +101,7 @@ public class Agente implements PontosCardeais {
             return 1;
         }
     }
-    
+
     /**Funciona como um driver ou um atuador: envia o comando para
      * agente físico ou simulado (no nosso caso, simulado)
      * @param direcao N NE S SE ...
@@ -104,9 +109,9 @@ public class Agente implements PontosCardeais {
      */
     public int executarIr(int direcao) {
         model.ir(direcao);
-        return 1; 
-    }   
-    
+        return 1;
+    }
+
     // Sensor
     public Estado sensorPosicao() {
         int pos[];
@@ -163,16 +168,21 @@ public class Agente implements PontosCardeais {
         TreeNode arvore_busca = new TreeNode(null);
         boolean alcancou_objetivo = false;
         fnComparator comparador_nos = new fnComparator();
-        PriorityQueue<TreeNode> fronteira = new PriorityQueue<TreeNode>(81, comparador_nos); 
+        PriorityQueue<TreeNode> fronteira = new PriorityQueue<TreeNode>(81, comparador_nos);
         Set<Estado> ja_explorados = new HashSet<Estado>(); // Estados ja explorados
         TreeNode no_caminho = null; // variavel para reconstruir o caminho
-    
+
+        int ct_nos = 0;
+        int ct_ja_explorados = 0;
+        int ct_descartados_front = 0;
+
         // Inicializa a cabeca da arvore
         arvore_busca.setState(prob.estIni);
         arvore_busca.setGn(0);
         arvore_busca.setHn(calculaHeuristica(arvore_busca.getState(), prob.estObj, alg));
         arvore_busca.setAction(-1);
         fronteira.add(arvore_busca);
+        ct_nos++;
 
         // Executa a busca
         while (!fronteira.isEmpty() && !alcancou_objetivo) {
@@ -191,8 +201,9 @@ public class Agente implements PontosCardeais {
                     if (acoes[i] != -1) {
                         // Constroi o filho
                         TreeNode filho = explorado.addChild();
+                        ct_nos++;
                         filho.setState(prob.suc(explorado.getState(), i));
-                        filho.setGn(explorado.getFn() + custoAcao(i));
+                        filho.setGn(explorado.getGn() + custoAcao(i));
                         filho.setHn(calculaHeuristica(filho.getState(), prob.estObj, alg));
                         filho.setAction(i);
 
@@ -202,16 +213,22 @@ public class Agente implements PontosCardeais {
                             //System.out.printf("Estado ainda nao explorado: (%d, %d)\n", filho.getState().getLin(), filho.getState().getCol());
                             TreeNode elem_ja_na_fronteira = buscaTreeNode(filho.getState(), fronteira);
                             // Se nao ta na fronteira
-                            if (elem_ja_na_fronteira == null) { 
+                            if (elem_ja_na_fronteira == null) {
                                 fronteira.add(filho);
                                 //System.out.printf("Estado novo encontrado: (%d, %d)\n", filho.getState().getLin(), filho.getState().getCol());
                             }
                             // Se o novo cara é mais barato
-                            else if (filho.getFn() < elem_ja_na_fronteira.getFn()){
-                                fronteira.remove(elem_ja_na_fronteira);
-                                fronteira.add(filho);
-                                //System.out.printf("Estado substituido na fronteira: (%d, %d)\n", filho.getState().getLin(), filho.getState().getCol());
+                            else {
+                                ct_descartados_front++;
+                                if (filho.getFn() < elem_ja_na_fronteira.getFn()) {
+                                    fronteira.remove(elem_ja_na_fronteira);
+                                    fronteira.add(filho);
+                                    //System.out.printf("Estado substituido na fronteira: (%d, %d)\n", filho.getState().getLin(), filho.getState().getCol());
+                                }
                             }
+                        }
+                        else {
+                            ct_ja_explorados++;
                         }
                     }
                 }
@@ -223,6 +240,10 @@ public class Agente implements PontosCardeais {
             System.exit(1);
         }
 
+        System.out.printf("ct_nos: %d\n", ct_nos);
+        System.out.printf("ct_ja_explorados: %d\n", ct_ja_explorados);
+        System.out.printf("ct_descartados_front: %d\n", ct_descartados_front);
+
         List<Integer> plano_lista = new ArrayList<Integer>();
         // Reconstroi caminho (ultimo passo no comeco)
         while (no_caminho.getParent() != null) {
@@ -232,7 +253,6 @@ public class Agente implements PontosCardeais {
         Collections.reverse(plano_lista);
         return plano_lista.stream().mapToInt(Integer::intValue).toArray();
     }
-
 
     public float custoAcao(int acao) {
         if (acao==N || acao==L || acao==O || acao==S) {
@@ -278,10 +298,10 @@ public class Agente implements PontosCardeais {
             return Math.min(dist_col, dist_lin)*1.5f + Math.abs(dist_col - dist_lin)*1f;
         }
         else if (alg == 3) {
-            return Math.abs(st.getLin()-obj.getLin());
+            return Math.abs(st.getCol()-obj.getCol());
         }
         else {
             return 0;
         }
     }
-}    
+}

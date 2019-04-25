@@ -29,29 +29,30 @@ public class Main {
         model.labir.porParedeVertical(6, 7, 4);
         model.labir.porParedeVertical(5, 6, 5);
         model.labir.porParedeVertical(5, 7, 7);
-        
-        // seta a posição inicial do agente no ambiente - nao interfere no 
+
+        // seta a posição inicial do agente no ambiente - nao interfere no
         // raciocinio do agente, somente no amibente simulado
         model.setPos(8, 0);
         model.setObj(2, 8);
-        
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Escolha o algoritmo de busca\n\t1. Custo Uniforme\n\t2. A* heuristica 1\n\t3. A* heuristica 2");
         int algoritmo_escolhido = sc.nextInt();
 
         // Cria um agente
         Agente ag = new Agente(model, algoritmo_escolhido);
-        
+
         // Ciclo de execucao do sistema
         // desenha labirinto
-        //model.desenhar(); 
-        
+        //model.desenhar();
+
         // agente escolhe proxima açao e a executa no ambiente (modificando
         // o estado do labirinto porque ocupa passa a ocupar nova posicao)
-        
+
         System.out.println("\n*** Inicio do ciclo de raciocinio do agente ***\n");
-        while (ag.deliberar() != -1) {  
-            //model.desenhar(); 
+        while (ag.deliberar() != -1) {
+            //model.desenhar();
+            ;
         }
     }
 }
