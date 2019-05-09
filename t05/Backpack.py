@@ -31,13 +31,13 @@ class Backpack:
             if self.penalize == True:
                 self.penalize_fitness()
             else:
-                self.repair_backpack()
+                self.repair()
 
     def penalize_fitness(self):
         self._fitness = 0
 
-    def repair_backpack(self):
-        while self._weight > self.max_weight:
+    def repair(self):
+        while self._weight > self._max_weight:
             value_list = []
             for key in self._stored_items.keys():
                 value_list.append((key, self._stored_items[key]['value']))
@@ -49,16 +49,27 @@ class Backpack:
     def randomly_fill(self):
         while True:
             random_index = random.randint(0, len(self._available_items.keys())-1)
-            random_name = self._available_items.keys()[random_index]
-            if self._weight + self._available_items[random_name] > self._max_weight:
+            random_name = list(self._available_items.keys())[random_index]
+            if self._weight + self._available_items[random_name]['weight'] > self._max_weight:
                 break
             else:
                 self.add_item(random_name)
 
+    def chromossome(self):
+        all_items = self._available_items
+        all_items.update(self._stored_items)
+        chrom = []
+        for key in sorted(list(all_items.keys())):
+            if key in self._stored_items.keys():
+                chrom.append(True)
+            else:
+                chrom.append(False)
+        return chrom
+
     def __str__(self):
         s = '\nBackpack:\n'
         for key in self._stored_items.keys():
-            s += key + ': Weight = ' + self._stored_items[key]['weight']
-            s += ', Value = ' + self._stored_items[key]['value'] + '\n'
-        s += 'Total: Weight = ' + self._weight + ', Value = ' + self._value
+            s += key + ': Weight = ' + str(self._stored_items[key]['weight'])
+            s += ', Value = ' + str(self._stored_items[key]['value']) + '\n'
+        s += 'Total: Weight = ' + str(self._weight) + ', Value = ' + str(self._value)
         return s
