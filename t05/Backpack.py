@@ -59,7 +59,7 @@ class Backpack:
         all_items = self._available_items
         all_items.update(self._stored_items)
         chrom = []
-        for key in sorted(list(all_items.keys())):
+        for key in sorted(list(all_items.keys()), key=int):
             if key in self._stored_items.keys():
                 chrom.append(True)
             else:
@@ -73,3 +73,10 @@ class Backpack:
             s += ', Value = ' + str(self._stored_items[key]['value']) + '\n'
         s += 'Total: Weight = ' + str(self._weight) + ', Value = ' + str(self._value)
         return s
+
+    def load_from_gene (self, gene: list):
+        for item in self._stored_items.keys():
+            remove_item(item)
+        for allele_num in enumerate(gene):
+            if gene[allele_num] == True:
+                add_item(str(allele_num))
