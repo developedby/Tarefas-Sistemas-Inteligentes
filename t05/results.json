@@ -1,0 +1,770 @@
+{
+    "0": {
+        "pop_size": 100,
+        "prob_crossover": 0.9,
+        "prob_mutation": 0.05,
+        "num_generations": 500,
+        "penalize": false,
+        "exec0": {
+            "best_backpack": "\nBackpack:\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n23: Weight = 2, Value = 4\n29: Weight = 19, Value = 32\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 107, Value = 182",
+            "best_fitness": "182"
+        },
+        "exec1": {
+            "best_backpack": "\nBackpack:\n7: Weight = 5, Value = 8\n17: Weight = 3, Value = 8\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n36: Weight = 18, Value = 19\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 183",
+            "best_fitness": "183"
+        },
+        "exec2": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n11: Weight = 6, Value = 6\n14: Weight = 3, Value = 5\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 110, Value = 190",
+            "best_fitness": "190"
+        },
+        "exec3": {
+            "best_backpack": "\nBackpack:\n4: Weight = 8, Value = 9\n5: Weight = 4, Value = 3\n8: Weight = 1, Value = 5\n13: Weight = 3, Value = 2\n15: Weight = 5, Value = 2\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n22: Weight = 7, Value = 5\n23: Weight = 2, Value = 4\n26: Weight = 4, Value = 3\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 172",
+            "best_fitness": "172"
+        },
+        "exec4": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n10: Weight = 8, Value = 1\n17: Weight = 3, Value = 8\n20: Weight = 4, Value = 2\n21: Weight = 3, Value = 4\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n34: Weight = 13, Value = 18\n36: Weight = 18, Value = 19\n37: Weight = 6, Value = 10\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 170",
+            "best_fitness": "170"
+        },
+        "exec5": {
+            "best_backpack": "\nBackpack:\n4: Weight = 8, Value = 9\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 186",
+            "best_fitness": "186"
+        },
+        "exec6": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n5: Weight = 4, Value = 3\n7: Weight = 5, Value = 8\n12: Weight = 4, Value = 3\n14: Weight = 3, Value = 5\n18: Weight = 5, Value = 9\n23: Weight = 2, Value = 4\n24: Weight = 3, Value = 3\n25: Weight = 5, Value = 1\n26: Weight = 4, Value = 3\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\nTotal: Weight = 113, Value = 165",
+            "best_fitness": "165"
+        },
+        "exec7": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n5: Weight = 4, Value = 3\n7: Weight = 5, Value = 8\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n20: Weight = 4, Value = 2\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\nTotal: Weight = 113, Value = 176",
+            "best_fitness": "176"
+        },
+        "exec8": {
+            "best_backpack": "\nBackpack:\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 190",
+            "best_fitness": "190"
+        },
+        "exec9": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n11: Weight = 6, Value = 6\n18: Weight = 5, Value = 9\n19: Weight = 7, Value = 3\n28: Weight = 7, Value = 14\n30: Weight = 20, Value = 20\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 110, Value = 170",
+            "best_fitness": "170"
+        },
+        "fitness_mean": 178.4
+    },
+    "1": {
+        "pop_size": 100,
+        "prob_crossover": 0.9,
+        "prob_mutation": 0.05,
+        "num_generations": 500,
+        "penalize": true,
+        "exec0": {
+            "best_backpack": "\nBackpack:\n1: Weight = 8, Value = 3\n3: Weight = 2, Value = 8\n5: Weight = 4, Value = 3\n14: Weight = 3, Value = 5\n24: Weight = 3, Value = 3\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n36: Weight = 18, Value = 19\n37: Weight = 6, Value = 10\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 168",
+            "best_fitness": "168"
+        },
+        "exec1": {
+            "best_backpack": "\nBackpack:\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n11: Weight = 6, Value = 6\n13: Weight = 3, Value = 2\n22: Weight = 7, Value = 5\n23: Weight = 2, Value = 4\n29: Weight = 19, Value = 32\n31: Weight = 21, Value = 19\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 167",
+            "best_fitness": "167"
+        },
+        "exec2": {
+            "best_backpack": "\nBackpack:\n4: Weight = 8, Value = 9\n8: Weight = 1, Value = 5\n11: Weight = 6, Value = 6\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n20: Weight = 4, Value = 2\n24: Weight = 3, Value = 3\n26: Weight = 4, Value = 3\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n36: Weight = 18, Value = 19\n38: Weight = 15, Value = 15\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 164",
+            "best_fitness": "164"
+        },
+        "exec3": {
+            "best_backpack": "\nBackpack:\n0: Weight = 3, Value = 1\n1: Weight = 8, Value = 3\n8: Weight = 1, Value = 5\n9: Weight = 1, Value = 1\n14: Weight = 3, Value = 5\n23: Weight = 2, Value = 4\n26: Weight = 4, Value = 3\n28: Weight = 7, Value = 14\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n41: Weight = 19, Value = 39\nTotal: Weight = 102, Value = 155",
+            "best_fitness": "155"
+        },
+        "exec4": {
+            "best_backpack": "\nBackpack:\n5: Weight = 4, Value = 3\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n9: Weight = 1, Value = 1\n13: Weight = 3, Value = 2\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n20: Weight = 4, Value = 2\n23: Weight = 2, Value = 4\n28: Weight = 7, Value = 14\n32: Weight = 11, Value = 15\n35: Weight = 17, Value = 13\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 173",
+            "best_fitness": "173"
+        },
+        "exec5": {
+            "best_backpack": "\nBackpack:\n1: Weight = 8, Value = 3\n12: Weight = 4, Value = 3\n18: Weight = 5, Value = 9\n20: Weight = 4, Value = 2\n23: Weight = 2, Value = 4\n28: Weight = 7, Value = 14\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 169",
+            "best_fitness": "169"
+        },
+        "exec6": {
+            "best_backpack": "\nBackpack:\n6: Weight = 4, Value = 2\n7: Weight = 5, Value = 8\n9: Weight = 1, Value = 1\n17: Weight = 3, Value = 8\n20: Weight = 4, Value = 2\n21: Weight = 3, Value = 4\n24: Weight = 3, Value = 3\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n38: Weight = 15, Value = 15\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 169",
+            "best_fitness": "169"
+        },
+        "exec7": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n5: Weight = 4, Value = 3\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n10: Weight = 8, Value = 1\n11: Weight = 6, Value = 6\n14: Weight = 3, Value = 5\n20: Weight = 4, Value = 2\n24: Weight = 3, Value = 3\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 168",
+            "best_fitness": "168"
+        },
+        "exec8": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n9: Weight = 1, Value = 1\n11: Weight = 6, Value = 6\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n24: Weight = 3, Value = 3\n27: Weight = 3, Value = 2\n29: Weight = 19, Value = 32\n30: Weight = 20, Value = 20\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\nTotal: Weight = 111, Value = 166",
+            "best_fitness": "166"
+        },
+        "exec9": {
+            "best_backpack": "\nBackpack:\n0: Weight = 3, Value = 1\n3: Weight = 2, Value = 8\n6: Weight = 4, Value = 2\n12: Weight = 4, Value = 3\n14: Weight = 3, Value = 5\n18: Weight = 5, Value = 9\n19: Weight = 7, Value = 3\n23: Weight = 2, Value = 4\n24: Weight = 3, Value = 3\n25: Weight = 5, Value = 1\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\nTotal: Weight = 112, Value = 158",
+            "best_fitness": "158"
+        },
+        "fitness_mean": 165.7
+    },
+    "2": {
+        "pop_size": 100,
+        "prob_crossover": 0.7,
+        "prob_mutation": 0.05,
+        "num_generations": 500,
+        "penalize": false,
+        "exec0": {
+            "best_backpack": "\nBackpack:\n7: Weight = 5, Value = 8\n28: Weight = 7, Value = 14\n33: Weight = 24, Value = 37\n36: Weight = 18, Value = 19\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 110, Value = 174",
+            "best_fitness": "174"
+        },
+        "exec1": {
+            "best_backpack": "\nBackpack:\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 190",
+            "best_fitness": "190"
+        },
+        "exec2": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n8: Weight = 1, Value = 5\n9: Weight = 1, Value = 1\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n23: Weight = 2, Value = 4\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 197",
+            "best_fitness": "197"
+        },
+        "exec3": {
+            "best_backpack": "\nBackpack:\n18: Weight = 5, Value = 9\n29: Weight = 19, Value = 32\n31: Weight = 21, Value = 19\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 176",
+            "best_fitness": "176"
+        },
+        "exec4": {
+            "best_backpack": "\nBackpack:\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n30: Weight = 20, Value = 20\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 109, Value = 171",
+            "best_fitness": "171"
+        },
+        "exec5": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 195",
+            "best_fitness": "195"
+        },
+        "exec6": {
+            "best_backpack": "\nBackpack:\n7: Weight = 5, Value = 8\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 109, Value = 181",
+            "best_fitness": "181"
+        },
+        "exec7": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n14: Weight = 3, Value = 5\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n36: Weight = 18, Value = 19\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 110, Value = 183",
+            "best_fitness": "183"
+        },
+        "exec8": {
+            "best_backpack": "\nBackpack:\n11: Weight = 6, Value = 6\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n38: Weight = 15, Value = 15\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 183",
+            "best_fitness": "183"
+        },
+        "exec9": {
+            "best_backpack": "\nBackpack:\n18: Weight = 5, Value = 9\n29: Weight = 19, Value = 32\n30: Weight = 20, Value = 20\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 177",
+            "best_fitness": "177"
+        },
+        "fitness_mean": 182.7
+    },
+    "3": {
+        "pop_size": 100,
+        "prob_crossover": 0.7,
+        "prob_mutation": 0.05,
+        "num_generations": 500,
+        "penalize": true,
+        "exec0": {
+            "best_backpack": "\nBackpack:\n5: Weight = 4, Value = 3\n13: Weight = 3, Value = 2\n14: Weight = 3, Value = 5\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\nTotal: Weight = 110, Value = 168",
+            "best_fitness": "168"
+        },
+        "exec1": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n5: Weight = 4, Value = 3\n6: Weight = 4, Value = 2\n8: Weight = 1, Value = 5\n9: Weight = 1, Value = 1\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n23: Weight = 2, Value = 4\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 191",
+            "best_fitness": "191"
+        },
+        "exec2": {
+            "best_backpack": "\nBackpack:\n0: Weight = 3, Value = 1\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n8: Weight = 1, Value = 5\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n20: Weight = 4, Value = 2\n22: Weight = 7, Value = 5\n24: Weight = 3, Value = 3\n27: Weight = 3, Value = 2\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\nTotal: Weight = 110, Value = 162",
+            "best_fitness": "162"
+        },
+        "exec3": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n9: Weight = 1, Value = 1\n11: Weight = 6, Value = 6\n12: Weight = 4, Value = 3\n18: Weight = 5, Value = 9\n21: Weight = 3, Value = 4\n26: Weight = 4, Value = 3\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n41: Weight = 19, Value = 39\nTotal: Weight = 106, Value = 179",
+            "best_fitness": "179"
+        },
+        "exec4": {
+            "best_backpack": "\nBackpack:\n0: Weight = 3, Value = 1\n3: Weight = 2, Value = 8\n9: Weight = 1, Value = 1\n19: Weight = 7, Value = 3\n23: Weight = 2, Value = 4\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 181",
+            "best_fitness": "181"
+        },
+        "exec5": {
+            "best_backpack": "\nBackpack:\n7: Weight = 5, Value = 8\n14: Weight = 3, Value = 5\n18: Weight = 5, Value = 9\n21: Weight = 3, Value = 4\n26: Weight = 4, Value = 3\n27: Weight = 3, Value = 2\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n30: Weight = 20, Value = 20\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 176",
+            "best_fitness": "176"
+        },
+        "exec6": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n14: Weight = 3, Value = 5\n29: Weight = 19, Value = 32\n30: Weight = 20, Value = 20\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n41: Weight = 19, Value = 39\nTotal: Weight = 106, Value = 169",
+            "best_fitness": "169"
+        },
+        "exec7": {
+            "best_backpack": "\nBackpack:\n7: Weight = 5, Value = 8\n11: Weight = 6, Value = 6\n12: Weight = 4, Value = 3\n17: Weight = 3, Value = 8\n23: Weight = 2, Value = 4\n26: Weight = 4, Value = 3\n29: Weight = 19, Value = 32\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 178",
+            "best_fitness": "178"
+        },
+        "exec8": {
+            "best_backpack": "\nBackpack:\n2: Weight = 12, Value = 1\n3: Weight = 2, Value = 8\n8: Weight = 1, Value = 5\n9: Weight = 1, Value = 1\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n23: Weight = 2, Value = 4\n25: Weight = 5, Value = 1\n29: Weight = 19, Value = 32\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 175",
+            "best_fitness": "175"
+        },
+        "exec9": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n5: Weight = 4, Value = 3\n7: Weight = 5, Value = 8\n9: Weight = 1, Value = 1\n11: Weight = 6, Value = 6\n15: Weight = 5, Value = 2\n17: Weight = 3, Value = 8\n20: Weight = 4, Value = 2\n23: Weight = 2, Value = 4\n24: Weight = 3, Value = 3\n29: Weight = 19, Value = 32\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 175",
+            "best_fitness": "175"
+        },
+        "fitness_mean": 175.4
+    },
+    "4": {
+        "pop_size": 100,
+        "prob_crossover": 0.7,
+        "prob_mutation": 0.01,
+        "num_generations": 500,
+        "penalize": false,
+        "exec0": {
+            "best_backpack": "\nBackpack:\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n36: Weight = 18, Value = 19\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 181",
+            "best_fitness": "181"
+        },
+        "exec1": {
+            "best_backpack": "\nBackpack:\n4: Weight = 8, Value = 9\n18: Weight = 5, Value = 9\n29: Weight = 19, Value = 32\n30: Weight = 20, Value = 20\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 173",
+            "best_fitness": "173"
+        },
+        "exec2": {
+            "best_backpack": "\nBackpack:\n4: Weight = 8, Value = 9\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 189",
+            "best_fitness": "189"
+        },
+        "exec3": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n38: Weight = 15, Value = 15\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 180",
+            "best_fitness": "180"
+        },
+        "exec4": {
+            "best_backpack": "\nBackpack:\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n30: Weight = 20, Value = 20\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 181",
+            "best_fitness": "181"
+        },
+        "exec5": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n12: Weight = 4, Value = 3\n23: Weight = 2, Value = 4\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 109, Value = 181",
+            "best_fitness": "181"
+        },
+        "exec6": {
+            "best_backpack": "\nBackpack:\n4: Weight = 8, Value = 9\n8: Weight = 1, Value = 5\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n36: Weight = 18, Value = 19\n37: Weight = 6, Value = 10\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 181",
+            "best_fitness": "181"
+        },
+        "exec7": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n11: Weight = 6, Value = 6\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n36: Weight = 18, Value = 19\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 181",
+            "best_fitness": "181"
+        },
+        "exec8": {
+            "best_backpack": "\nBackpack:\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n36: Weight = 18, Value = 19\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 181",
+            "best_fitness": "181"
+        },
+        "exec9": {
+            "best_backpack": "\nBackpack:\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n14: Weight = 3, Value = 5\n28: Weight = 7, Value = 14\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 190",
+            "best_fitness": "190"
+        },
+        "fitness_mean": 181.8
+    },
+    "5": {
+        "pop_size": 100,
+        "prob_crossover": 0.7,
+        "prob_mutation": 0.01,
+        "num_generations": 500,
+        "penalize": true,
+        "exec0": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n5: Weight = 4, Value = 3\n8: Weight = 1, Value = 5\n9: Weight = 1, Value = 1\n12: Weight = 4, Value = 3\n13: Weight = 3, Value = 2\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n25: Weight = 5, Value = 1\n26: Weight = 4, Value = 3\n28: Weight = 7, Value = 14\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 178",
+            "best_fitness": "178"
+        },
+        "exec1": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n12: Weight = 4, Value = 3\n13: Weight = 3, Value = 2\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n21: Weight = 3, Value = 4\n24: Weight = 3, Value = 3\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 109, Value = 185",
+            "best_fitness": "185"
+        },
+        "exec2": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n7: Weight = 5, Value = 8\n9: Weight = 1, Value = 1\n14: Weight = 3, Value = 5\n20: Weight = 4, Value = 2\n23: Weight = 2, Value = 4\n27: Weight = 3, Value = 2\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n38: Weight = 15, Value = 15\n41: Weight = 19, Value = 39\nTotal: Weight = 110, Value = 171",
+            "best_fitness": "171"
+        },
+        "exec3": {
+            "best_backpack": "\nBackpack:\n9: Weight = 1, Value = 1\n19: Weight = 7, Value = 3\n21: Weight = 3, Value = 4\n22: Weight = 7, Value = 5\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n38: Weight = 15, Value = 15\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 161",
+            "best_fitness": "161"
+        },
+        "exec4": {
+            "best_backpack": "\nBackpack:\n5: Weight = 4, Value = 3\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n13: Weight = 3, Value = 2\n18: Weight = 5, Value = 9\n23: Weight = 2, Value = 4\n24: Weight = 3, Value = 3\n29: Weight = 19, Value = 32\n36: Weight = 18, Value = 19\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 110, Value = 174",
+            "best_fitness": "174"
+        },
+        "exec5": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n10: Weight = 8, Value = 1\n15: Weight = 5, Value = 2\n17: Weight = 3, Value = 8\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 104, Value = 168",
+            "best_fitness": "168"
+        },
+        "exec6": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n8: Weight = 1, Value = 5\n9: Weight = 1, Value = 1\n12: Weight = 4, Value = 3\n17: Weight = 3, Value = 8\n24: Weight = 3, Value = 3\n26: Weight = 4, Value = 3\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 105, Value = 175",
+            "best_fitness": "175"
+        },
+        "exec7": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n14: Weight = 3, Value = 5\n15: Weight = 5, Value = 2\n17: Weight = 3, Value = 8\n19: Weight = 7, Value = 3\n24: Weight = 3, Value = 3\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n30: Weight = 20, Value = 20\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\nTotal: Weight = 112, Value = 163",
+            "best_fitness": "163"
+        },
+        "exec8": {
+            "best_backpack": "\nBackpack:\n0: Weight = 3, Value = 1\n5: Weight = 4, Value = 3\n8: Weight = 1, Value = 5\n15: Weight = 5, Value = 2\n16: Weight = 7, Value = 3\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 171",
+            "best_fitness": "171"
+        },
+        "exec9": {
+            "best_backpack": "\nBackpack:\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n34: Weight = 13, Value = 18\n36: Weight = 18, Value = 19\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 173",
+            "best_fitness": "173"
+        },
+        "fitness_mean": 171.9
+    },
+    "6": {
+        "pop_size": 100,
+        "prob_crossover": 0.7,
+        "prob_mutation": 0.1,
+        "num_generations": 500,
+        "penalize": false,
+        "exec0": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n7: Weight = 5, Value = 8\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 184",
+            "best_fitness": "184"
+        },
+        "exec1": {
+            "best_backpack": "\nBackpack:\n29: Weight = 19, Value = 32\n31: Weight = 21, Value = 19\n33: Weight = 24, Value = 37\n36: Weight = 18, Value = 19\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 163",
+            "best_fitness": "163"
+        },
+        "exec2": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n8: Weight = 1, Value = 5\n11: Weight = 6, Value = 6\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n29: Weight = 19, Value = 32\n31: Weight = 21, Value = 19\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 183",
+            "best_fitness": "183"
+        },
+        "exec3": {
+            "best_backpack": "\nBackpack:\n4: Weight = 8, Value = 9\n8: Weight = 1, Value = 5\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n36: Weight = 18, Value = 19\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 108, Value = 180",
+            "best_fitness": "180"
+        },
+        "exec4": {
+            "best_backpack": "\nBackpack:\n18: Weight = 5, Value = 9\n29: Weight = 19, Value = 32\n31: Weight = 21, Value = 19\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 176",
+            "best_fitness": "176"
+        },
+        "exec5": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n11: Weight = 6, Value = 6\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n21: Weight = 3, Value = 4\n23: Weight = 2, Value = 4\n28: Weight = 7, Value = 14\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 184",
+            "best_fitness": "184"
+        },
+        "exec6": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 188",
+            "best_fitness": "188"
+        },
+        "exec7": {
+            "best_backpack": "\nBackpack:\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 181",
+            "best_fitness": "181"
+        },
+        "exec8": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n8: Weight = 1, Value = 5\n11: Weight = 6, Value = 6\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n23: Weight = 2, Value = 4\n28: Weight = 7, Value = 14\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n38: Weight = 15, Value = 15\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 185",
+            "best_fitness": "185"
+        },
+        "exec9": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n7: Weight = 5, Value = 8\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 194",
+            "best_fitness": "194"
+        },
+        "fitness_mean": 181.8
+    },
+    "7": {
+        "pop_size": 100,
+        "prob_crossover": 0.7,
+        "prob_mutation": 0.1,
+        "num_generations": 500,
+        "penalize": true,
+        "exec0": {
+            "best_backpack": "\nBackpack:\n0: Weight = 3, Value = 1\n1: Weight = 8, Value = 3\n3: Weight = 2, Value = 8\n5: Weight = 4, Value = 3\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n14: Weight = 3, Value = 5\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n30: Weight = 20, Value = 20\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 167",
+            "best_fitness": "167"
+        },
+        "exec1": {
+            "best_backpack": "\nBackpack:\n0: Weight = 3, Value = 1\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 177",
+            "best_fitness": "177"
+        },
+        "exec2": {
+            "best_backpack": "\nBackpack:\n0: Weight = 3, Value = 1\n3: Weight = 2, Value = 8\n7: Weight = 5, Value = 8\n9: Weight = 1, Value = 1\n17: Weight = 3, Value = 8\n26: Weight = 4, Value = 3\n27: Weight = 3, Value = 2\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n35: Weight = 17, Value = 13\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 108, Value = 169",
+            "best_fitness": "169"
+        },
+        "exec3": {
+            "best_backpack": "\nBackpack:\n15: Weight = 5, Value = 2\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n19: Weight = 7, Value = 3\n21: Weight = 3, Value = 4\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 109, Value = 169",
+            "best_fitness": "169"
+        },
+        "exec4": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n11: Weight = 6, Value = 6\n12: Weight = 4, Value = 3\n19: Weight = 7, Value = 3\n20: Weight = 4, Value = 2\n27: Weight = 3, Value = 2\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 176",
+            "best_fitness": "176"
+        },
+        "exec5": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n5: Weight = 4, Value = 3\n6: Weight = 4, Value = 2\n8: Weight = 1, Value = 5\n9: Weight = 1, Value = 1\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\nTotal: Weight = 113, Value = 186",
+            "best_fitness": "186"
+        },
+        "exec6": {
+            "best_backpack": "\nBackpack:\n5: Weight = 4, Value = 3\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n17: Weight = 3, Value = 8\n22: Weight = 7, Value = 5\n24: Weight = 3, Value = 3\n26: Weight = 4, Value = 3\n33: Weight = 24, Value = 37\n36: Weight = 18, Value = 19\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 170",
+            "best_fitness": "170"
+        },
+        "exec7": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n5: Weight = 4, Value = 3\n14: Weight = 3, Value = 5\n21: Weight = 3, Value = 4\n27: Weight = 3, Value = 2\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 181",
+            "best_fitness": "181"
+        },
+        "exec8": {
+            "best_backpack": "\nBackpack:\n8: Weight = 1, Value = 5\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n36: Weight = 18, Value = 19\n37: Weight = 6, Value = 10\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 186",
+            "best_fitness": "186"
+        },
+        "exec9": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n5: Weight = 4, Value = 3\n6: Weight = 4, Value = 2\n9: Weight = 1, Value = 1\n18: Weight = 5, Value = 9\n27: Weight = 3, Value = 2\n29: Weight = 19, Value = 32\n34: Weight = 13, Value = 18\n35: Weight = 17, Value = 13\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 167",
+            "best_fitness": "167"
+        },
+        "fitness_mean": 174.8
+    },
+    "8": {
+        "pop_size": 100,
+        "prob_crossover": 0.5,
+        "prob_mutation": 0.05,
+        "num_generations": 500,
+        "penalize": false,
+        "exec0": {
+            "best_backpack": "\nBackpack:\n17: Weight = 3, Value = 8\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n30: Weight = 20, Value = 20\n32: Weight = 11, Value = 15\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n38: Weight = 15, Value = 15\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 171",
+            "best_fitness": "171"
+        },
+        "exec1": {
+            "best_backpack": "\nBackpack:\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n34: Weight = 13, Value = 18\n36: Weight = 18, Value = 19\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 181",
+            "best_fitness": "181"
+        },
+        "exec2": {
+            "best_backpack": "\nBackpack:\n18: Weight = 5, Value = 9\n29: Weight = 19, Value = 32\n31: Weight = 21, Value = 19\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 176",
+            "best_fitness": "176"
+        },
+        "exec3": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n7: Weight = 5, Value = 8\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n33: Weight = 24, Value = 37\n38: Weight = 15, Value = 15\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 187",
+            "best_fitness": "187"
+        },
+        "exec4": {
+            "best_backpack": "\nBackpack:\n4: Weight = 8, Value = 9\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n30: Weight = 20, Value = 20\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 181",
+            "best_fitness": "181"
+        },
+        "exec5": {
+            "best_backpack": "\nBackpack:\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n30: Weight = 20, Value = 20\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 179",
+            "best_fitness": "179"
+        },
+        "exec6": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n7: Weight = 5, Value = 8\n18: Weight = 5, Value = 9\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 191",
+            "best_fitness": "191"
+        },
+        "exec7": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n8: Weight = 1, Value = 5\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n27: Weight = 3, Value = 2\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 106, Value = 186",
+            "best_fitness": "186"
+        },
+        "exec8": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n22: Weight = 7, Value = 5\n23: Weight = 2, Value = 4\n28: Weight = 7, Value = 14\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 190",
+            "best_fitness": "190"
+        },
+        "exec9": {
+            "best_backpack": "\nBackpack:\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 110, Value = 180",
+            "best_fitness": "180"
+        },
+        "fitness_mean": 182.2
+    },
+    "9": {
+        "pop_size": 100,
+        "prob_crossover": 0.5,
+        "prob_mutation": 0.05,
+        "num_generations": 500,
+        "penalize": true,
+        "exec0": {
+            "best_backpack": "\nBackpack:\n4: Weight = 8, Value = 9\n17: Weight = 3, Value = 8\n23: Weight = 2, Value = 4\n26: Weight = 4, Value = 3\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 110, Value = 175",
+            "best_fitness": "175"
+        },
+        "exec1": {
+            "best_backpack": "\nBackpack:\n4: Weight = 8, Value = 9\n5: Weight = 4, Value = 3\n7: Weight = 5, Value = 8\n9: Weight = 1, Value = 1\n17: Weight = 3, Value = 8\n21: Weight = 3, Value = 4\n24: Weight = 3, Value = 3\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n31: Weight = 21, Value = 19\n37: Weight = 6, Value = 10\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 167",
+            "best_fitness": "167"
+        },
+        "exec2": {
+            "best_backpack": "\nBackpack:\n1: Weight = 8, Value = 3\n12: Weight = 4, Value = 3\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n24: Weight = 3, Value = 3\n25: Weight = 5, Value = 1\n27: Weight = 3, Value = 2\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 169",
+            "best_fitness": "169"
+        },
+        "exec3": {
+            "best_backpack": "\nBackpack:\n1: Weight = 8, Value = 3\n3: Weight = 2, Value = 8\n5: Weight = 4, Value = 3\n9: Weight = 1, Value = 1\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n23: Weight = 2, Value = 4\n28: Weight = 7, Value = 14\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 181",
+            "best_fitness": "181"
+        },
+        "exec4": {
+            "best_backpack": "\nBackpack:\n1: Weight = 8, Value = 3\n7: Weight = 5, Value = 8\n21: Weight = 3, Value = 4\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 110, Value = 177",
+            "best_fitness": "177"
+        },
+        "exec5": {
+            "best_backpack": "\nBackpack:\n7: Weight = 5, Value = 8\n11: Weight = 6, Value = 6\n12: Weight = 4, Value = 3\n13: Weight = 3, Value = 2\n26: Weight = 4, Value = 3\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n30: Weight = 20, Value = 20\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 167",
+            "best_fitness": "167"
+        },
+        "exec6": {
+            "best_backpack": "\nBackpack:\n4: Weight = 8, Value = 9\n6: Weight = 4, Value = 2\n8: Weight = 1, Value = 5\n9: Weight = 1, Value = 1\n16: Weight = 7, Value = 3\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n24: Weight = 3, Value = 3\n28: Weight = 7, Value = 14\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 180",
+            "best_fitness": "180"
+        },
+        "exec7": {
+            "best_backpack": "\nBackpack:\n0: Weight = 3, Value = 1\n8: Weight = 1, Value = 5\n16: Weight = 7, Value = 3\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n23: Weight = 2, Value = 4\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n36: Weight = 18, Value = 19\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 109, Value = 174",
+            "best_fitness": "174"
+        },
+        "exec8": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n5: Weight = 4, Value = 3\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n13: Weight = 3, Value = 2\n18: Weight = 5, Value = 9\n21: Weight = 3, Value = 4\n23: Weight = 2, Value = 4\n24: Weight = 3, Value = 3\n28: Weight = 7, Value = 14\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n41: Weight = 19, Value = 39\nTotal: Weight = 102, Value = 169",
+            "best_fitness": "169"
+        },
+        "exec9": {
+            "best_backpack": "\nBackpack:\n0: Weight = 3, Value = 1\n3: Weight = 2, Value = 8\n9: Weight = 1, Value = 1\n17: Weight = 3, Value = 8\n21: Weight = 3, Value = 4\n29: Weight = 19, Value = 32\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n38: Weight = 15, Value = 15\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 109, Value = 176",
+            "best_fitness": "176"
+        },
+        "fitness_mean": 173.5
+    },
+    "10": {
+        "pop_size": 100,
+        "prob_crossover": 0.6,
+        "prob_mutation": 0.05,
+        "num_generations": 500,
+        "penalize": false,
+        "exec0": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n8: Weight = 1, Value = 5\n14: Weight = 3, Value = 5\n18: Weight = 5, Value = 9\n23: Weight = 2, Value = 4\n24: Weight = 3, Value = 3\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n36: Weight = 18, Value = 19\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 184",
+            "best_fitness": "184"
+        },
+        "exec1": {
+            "best_backpack": "\nBackpack:\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 194",
+            "best_fitness": "194"
+        },
+        "exec2": {
+            "best_backpack": "\nBackpack:\n4: Weight = 8, Value = 9\n5: Weight = 4, Value = 3\n8: Weight = 1, Value = 5\n21: Weight = 3, Value = 4\n26: Weight = 4, Value = 3\n27: Weight = 3, Value = 2\n28: Weight = 7, Value = 14\n33: Weight = 24, Value = 37\n38: Weight = 15, Value = 15\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 171",
+            "best_fitness": "171"
+        },
+        "exec3": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n11: Weight = 6, Value = 6\n17: Weight = 3, Value = 8\n23: Weight = 2, Value = 4\n24: Weight = 3, Value = 3\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n35: Weight = 17, Value = 13\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 109, Value = 180",
+            "best_fitness": "180"
+        },
+        "exec4": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n8: Weight = 1, Value = 5\n11: Weight = 6, Value = 6\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n38: Weight = 15, Value = 15\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 181",
+            "best_fitness": "181"
+        },
+        "exec5": {
+            "best_backpack": "\nBackpack:\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 181",
+            "best_fitness": "181"
+        },
+        "exec6": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n11: Weight = 6, Value = 6\n14: Weight = 3, Value = 5\n23: Weight = 2, Value = 4\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 188",
+            "best_fitness": "188"
+        },
+        "exec7": {
+            "best_backpack": "\nBackpack:\n8: Weight = 1, Value = 5\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 108, Value = 185",
+            "best_fitness": "185"
+        },
+        "exec8": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n35: Weight = 17, Value = 13\n36: Weight = 18, Value = 19\n37: Weight = 6, Value = 10\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 172",
+            "best_fitness": "172"
+        },
+        "exec9": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n8: Weight = 1, Value = 5\n18: Weight = 5, Value = 9\n24: Weight = 3, Value = 3\n28: Weight = 7, Value = 14\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 189",
+            "best_fitness": "189"
+        },
+        "fitness_mean": 182.5
+    },
+    "11": {
+        "pop_size": 100,
+        "prob_crossover": 0.6,
+        "prob_mutation": 0.05,
+        "num_generations": 500,
+        "penalize": true,
+        "exec0": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n12: Weight = 4, Value = 3\n15: Weight = 5, Value = 2\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n19: Weight = 7, Value = 3\n23: Weight = 2, Value = 4\n26: Weight = 4, Value = 3\n28: Weight = 7, Value = 14\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 172",
+            "best_fitness": "172"
+        },
+        "exec1": {
+            "best_backpack": "\nBackpack:\n7: Weight = 5, Value = 8\n11: Weight = 6, Value = 6\n12: Weight = 4, Value = 3\n13: Weight = 3, Value = 2\n14: Weight = 3, Value = 5\n20: Weight = 4, Value = 2\n23: Weight = 2, Value = 4\n27: Weight = 3, Value = 2\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 172",
+            "best_fitness": "172"
+        },
+        "exec2": {
+            "best_backpack": "\nBackpack:\n0: Weight = 3, Value = 1\n3: Weight = 2, Value = 8\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n13: Weight = 3, Value = 2\n17: Weight = 3, Value = 8\n28: Weight = 7, Value = 14\n32: Weight = 11, Value = 15\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n38: Weight = 15, Value = 15\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 183",
+            "best_fitness": "183"
+        },
+        "exec3": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n17: Weight = 3, Value = 8\n28: Weight = 7, Value = 14\n30: Weight = 20, Value = 20\n35: Weight = 17, Value = 13\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 168",
+            "best_fitness": "168"
+        },
+        "exec4": {
+            "best_backpack": "\nBackpack:\n0: Weight = 3, Value = 1\n3: Weight = 2, Value = 8\n5: Weight = 4, Value = 3\n8: Weight = 1, Value = 5\n26: Weight = 4, Value = 3\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n36: Weight = 18, Value = 19\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 176",
+            "best_fitness": "176"
+        },
+        "exec5": {
+            "best_backpack": "\nBackpack:\n1: Weight = 8, Value = 3\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n9: Weight = 1, Value = 1\n11: Weight = 6, Value = 6\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n21: Weight = 3, Value = 4\n23: Weight = 2, Value = 4\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\nTotal: Weight = 113, Value = 177",
+            "best_fitness": "177"
+        },
+        "exec6": {
+            "best_backpack": "\nBackpack:\n8: Weight = 1, Value = 5\n14: Weight = 3, Value = 5\n21: Weight = 3, Value = 4\n23: Weight = 2, Value = 4\n24: Weight = 3, Value = 3\n26: Weight = 4, Value = 3\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n36: Weight = 18, Value = 19\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 104, Value = 168",
+            "best_fitness": "168"
+        },
+        "exec7": {
+            "best_backpack": "\nBackpack:\n11: Weight = 6, Value = 6\n12: Weight = 4, Value = 3\n17: Weight = 3, Value = 8\n24: Weight = 3, Value = 3\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n36: Weight = 18, Value = 19\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 170",
+            "best_fitness": "170"
+        },
+        "exec8": {
+            "best_backpack": "\nBackpack:\n4: Weight = 8, Value = 9\n8: Weight = 1, Value = 5\n18: Weight = 5, Value = 9\n20: Weight = 4, Value = 2\n23: Weight = 2, Value = 4\n33: Weight = 24, Value = 37\n36: Weight = 18, Value = 19\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 174",
+            "best_fitness": "174"
+        },
+        "exec9": {
+            "best_backpack": "\nBackpack:\n0: Weight = 3, Value = 1\n3: Weight = 2, Value = 8\n8: Weight = 1, Value = 5\n9: Weight = 1, Value = 1\n12: Weight = 4, Value = 3\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n22: Weight = 7, Value = 5\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n34: Weight = 13, Value = 18\n36: Weight = 18, Value = 19\n37: Weight = 6, Value = 10\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 177",
+            "best_fitness": "177"
+        },
+        "fitness_mean": 173.7
+    },
+    "12": {
+        "pop_size": 200,
+        "prob_crossover": 0.7,
+        "prob_mutation": 0.05,
+        "num_generations": 500,
+        "penalize": false,
+        "exec0": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n8: Weight = 1, Value = 5\n14: Weight = 3, Value = 5\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n30: Weight = 20, Value = 20\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 187",
+            "best_fitness": "187"
+        },
+        "exec1": {
+            "best_backpack": "\nBackpack:\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 181",
+            "best_fitness": "181"
+        },
+        "exec2": {
+            "best_backpack": "\nBackpack:\n7: Weight = 5, Value = 8\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n22: Weight = 7, Value = 5\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 188",
+            "best_fitness": "188"
+        },
+        "exec3": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n7: Weight = 5, Value = 8\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 191",
+            "best_fitness": "191"
+        },
+        "exec4": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 202",
+            "best_fitness": "202"
+        },
+        "exec5": {
+            "best_backpack": "\nBackpack:\n7: Weight = 5, Value = 8\n17: Weight = 3, Value = 8\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n36: Weight = 18, Value = 19\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 183",
+            "best_fitness": "183"
+        },
+        "exec6": {
+            "best_backpack": "\nBackpack:\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 189",
+            "best_fitness": "189"
+        },
+        "exec7": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n18: Weight = 5, Value = 9\n23: Weight = 2, Value = 4\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 110, Value = 194",
+            "best_fitness": "194"
+        },
+        "exec8": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n33: Weight = 24, Value = 37\n38: Weight = 15, Value = 15\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 187",
+            "best_fitness": "187"
+        },
+        "exec9": {
+            "best_backpack": "\nBackpack:\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 183",
+            "best_fitness": "183"
+        },
+        "fitness_mean": 188.5
+    },
+    "13": {
+        "pop_size": 200,
+        "prob_crossover": 0.7,
+        "prob_mutation": 0.05,
+        "num_generations": 500,
+        "penalize": true,
+        "exec0": {
+            "best_backpack": "\nBackpack:\n0: Weight = 3, Value = 1\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n6: Weight = 4, Value = 2\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n13: Weight = 3, Value = 2\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n23: Weight = 2, Value = 4\n24: Weight = 3, Value = 3\n25: Weight = 5, Value = 1\n29: Weight = 19, Value = 32\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\nTotal: Weight = 113, Value = 167",
+            "best_fitness": "167"
+        },
+        "exec1": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n8: Weight = 1, Value = 5\n9: Weight = 1, Value = 1\n11: Weight = 6, Value = 6\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n21: Weight = 3, Value = 4\n28: Weight = 7, Value = 14\n33: Weight = 24, Value = 37\n38: Weight = 15, Value = 15\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 186",
+            "best_fitness": "186"
+        },
+        "exec2": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n6: Weight = 4, Value = 2\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n9: Weight = 1, Value = 1\n11: Weight = 6, Value = 6\n13: Weight = 3, Value = 2\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n19: Weight = 7, Value = 3\n21: Weight = 3, Value = 4\n23: Weight = 2, Value = 4\n28: Weight = 7, Value = 14\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 182",
+            "best_fitness": "182"
+        },
+        "exec3": {
+            "best_backpack": "\nBackpack:\n4: Weight = 8, Value = 9\n8: Weight = 1, Value = 5\n9: Weight = 1, Value = 1\n17: Weight = 3, Value = 8\n21: Weight = 3, Value = 4\n24: Weight = 3, Value = 3\n26: Weight = 4, Value = 3\n28: Weight = 7, Value = 14\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 181",
+            "best_fitness": "181"
+        },
+        "exec4": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n9: Weight = 1, Value = 1\n14: Weight = 3, Value = 5\n15: Weight = 5, Value = 2\n17: Weight = 3, Value = 8\n21: Weight = 3, Value = 4\n24: Weight = 3, Value = 3\n25: Weight = 5, Value = 1\n29: Weight = 19, Value = 32\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 184",
+            "best_fitness": "184"
+        },
+        "exec5": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n29: Weight = 19, Value = 32\n30: Weight = 20, Value = 20\n34: Weight = 13, Value = 18\n36: Weight = 18, Value = 19\n37: Weight = 6, Value = 10\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 168",
+            "best_fitness": "168"
+        },
+        "exec6": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n5: Weight = 4, Value = 3\n7: Weight = 5, Value = 8\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n20: Weight = 4, Value = 2\n21: Weight = 3, Value = 4\n23: Weight = 2, Value = 4\n27: Weight = 3, Value = 2\n28: Weight = 7, Value = 14\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 182",
+            "best_fitness": "182"
+        },
+        "exec7": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n5: Weight = 4, Value = 3\n7: Weight = 5, Value = 8\n12: Weight = 4, Value = 3\n17: Weight = 3, Value = 8\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 188",
+            "best_fitness": "188"
+        },
+        "exec8": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n8: Weight = 1, Value = 5\n9: Weight = 1, Value = 1\n14: Weight = 3, Value = 5\n16: Weight = 7, Value = 3\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n24: Weight = 3, Value = 3\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 183",
+            "best_fitness": "183"
+        },
+        "exec9": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n6: Weight = 4, Value = 2\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n16: Weight = 7, Value = 3\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n21: Weight = 3, Value = 4\n26: Weight = 4, Value = 3\n27: Weight = 3, Value = 2\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 182",
+            "best_fitness": "182"
+        },
+        "fitness_mean": 180.3
+    },
+    "14": {
+        "pop_size": 500,
+        "prob_crossover": 0.7,
+        "prob_mutation": 0.05,
+        "num_generations": 1000,
+        "penalize": false,
+        "exec0": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n8: Weight = 1, Value = 5\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 202",
+            "best_fitness": "202"
+        },
+        "exec1": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 195",
+            "best_fitness": "195"
+        },
+        "exec2": {
+            "best_backpack": "\nBackpack:\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 190",
+            "best_fitness": "190"
+        },
+        "exec3": {
+            "best_backpack": "\nBackpack:\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 192",
+            "best_fitness": "192"
+        },
+        "exec4": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n17: Weight = 3, Value = 8\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 196",
+            "best_fitness": "196"
+        },
+        "exec5": {
+            "best_backpack": "\nBackpack:\n8: Weight = 1, Value = 5\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 195",
+            "best_fitness": "195"
+        },
+        "exec6": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n22: Weight = 7, Value = 5\n23: Weight = 2, Value = 4\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n36: Weight = 18, Value = 19\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 183",
+            "best_fitness": "183"
+        },
+        "exec7": {
+            "best_backpack": "\nBackpack:\n4: Weight = 8, Value = 9\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 190",
+            "best_fitness": "190"
+        },
+        "exec8": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n8: Weight = 1, Value = 5\n14: Weight = 3, Value = 5\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 198",
+            "best_fitness": "198"
+        },
+        "exec9": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n11: Weight = 6, Value = 6\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 195",
+            "best_fitness": "195"
+        },
+        "fitness_mean": 193.6
+    },
+    "15": {
+        "pop_size": 500,
+        "prob_crossover": 0.7,
+        "prob_mutation": 0.05,
+        "num_generations": 1000,
+        "penalize": true,
+        "exec0": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n5: Weight = 4, Value = 3\n9: Weight = 1, Value = 1\n12: Weight = 4, Value = 3\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n28: Weight = 7, Value = 14\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 111, Value = 187",
+            "best_fitness": "187"
+        },
+        "exec1": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n4: Weight = 8, Value = 9\n8: Weight = 1, Value = 5\n17: Weight = 3, Value = 8\n23: Weight = 2, Value = 4\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n38: Weight = 15, Value = 15\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 185",
+            "best_fitness": "185"
+        },
+        "exec2": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n9: Weight = 1, Value = 1\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n20: Weight = 4, Value = 2\n23: Weight = 2, Value = 4\n25: Weight = 5, Value = 1\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 187",
+            "best_fitness": "187"
+        },
+        "exec3": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n6: Weight = 4, Value = 2\n8: Weight = 1, Value = 5\n12: Weight = 4, Value = 3\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n20: Weight = 4, Value = 2\n27: Weight = 3, Value = 2\n28: Weight = 7, Value = 14\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 186",
+            "best_fitness": "186"
+        },
+        "exec4": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n12: Weight = 4, Value = 3\n14: Weight = 3, Value = 5\n21: Weight = 3, Value = 4\n28: Weight = 7, Value = 14\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 195",
+            "best_fitness": "195"
+        },
+        "exec5": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n21: Weight = 3, Value = 4\n23: Weight = 2, Value = 4\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 195",
+            "best_fitness": "195"
+        },
+        "exec6": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n7: Weight = 5, Value = 8\n8: Weight = 1, Value = 5\n9: Weight = 1, Value = 1\n11: Weight = 6, Value = 6\n12: Weight = 4, Value = 3\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n23: Weight = 2, Value = 4\n24: Weight = 3, Value = 3\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 191",
+            "best_fitness": "191"
+        },
+        "exec7": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n7: Weight = 5, Value = 8\n13: Weight = 3, Value = 2\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n23: Weight = 2, Value = 4\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 197",
+            "best_fitness": "197"
+        },
+        "exec8": {
+            "best_backpack": "\nBackpack:\n17: Weight = 3, Value = 8\n18: Weight = 5, Value = 9\n29: Weight = 19, Value = 32\n33: Weight = 24, Value = 37\n37: Weight = 6, Value = 10\n39: Weight = 25, Value = 40\n40: Weight = 12, Value = 17\n41: Weight = 19, Value = 39\nTotal: Weight = 113, Value = 192",
+            "best_fitness": "192"
+        },
+        "exec9": {
+            "best_backpack": "\nBackpack:\n3: Weight = 2, Value = 8\n8: Weight = 1, Value = 5\n12: Weight = 4, Value = 3\n14: Weight = 3, Value = 5\n17: Weight = 3, Value = 8\n21: Weight = 3, Value = 4\n26: Weight = 4, Value = 3\n29: Weight = 19, Value = 32\n32: Weight = 11, Value = 15\n33: Weight = 24, Value = 37\n34: Weight = 13, Value = 18\n37: Weight = 6, Value = 10\n41: Weight = 19, Value = 39\nTotal: Weight = 112, Value = 187",
+            "best_fitness": "187"
+        },
+        "fitness_mean": 190.2
+    }
+}

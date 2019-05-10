@@ -1,11 +1,12 @@
 import random
+import copy
 
 def secondField(entry):
     return entry[1]
 
 class Backpack:
     def __init__(self, items: dict, max_weight: int, penalize: bool = False):
-        self._available_items = items
+        self._available_items = copy.deepcopy(items)
         self._stored_items = {}
         self._max_weight = max_weight
         self._weight = 0
@@ -26,9 +27,9 @@ class Backpack:
         self._available_items[name] = item
 
     def update_fitness(self):
-        self._fitness = value
+        self._fitness = self._value
         if self._weight > self._max_weight:
-            if self.penalize == True:
+            if self._penalize == True:
                 self.penalize_fitness()
             else:
                 self.repair()
@@ -47,6 +48,9 @@ class Backpack:
             self._fitness = self._value
 
     def randomly_fill(self):
+        dead_items = list(self._stored_items.keys())
+        for item in dead_items:
+            self.remove_item(item)
         while True:
             random_index = random.randint(0, len(self._available_items.keys())-1)
             random_name = list(self._available_items.keys())[random_index]
@@ -74,9 +78,11 @@ class Backpack:
         s += 'Total: Weight = ' + str(self._weight) + ', Value = ' + str(self._value)
         return s
 
-    def load_from_gene (self, gene: list):
-        for item in self._stored_items.keys():
-            remove_item(item)
-        for allele_num in enumerate(gene):
-            if gene[allele_num] == True:
-                add_item(str(allele_num))
+    def load_from_gene(self, gene: list):
+        dead_items = list(self._stored_items.keys())
+        for item in dead_items:
+            self.remove_item(item)
+
+        for i,key in enumerate(sorted(list(self._available_items.keys()), key=int)):
+            if gene[i] == True:
+                self.add_item(key)

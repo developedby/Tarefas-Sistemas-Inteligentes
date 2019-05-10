@@ -3,8 +3,8 @@ import random
 def roulette_select(fitness: list, chromosomes_num: int):
     return random.choices(population=range(len(fitness)), weights=fitness, k=chromosomes_num)
 
-def crossover(gene1: list, gene2: list, prob_crossover):
-    if random.uniform(0,1) < prob_crossover:
+def crossover(gene1: list, gene2: list, crossover_probability: float):
+    if random.uniform(0,1) < crossover_probability:
         return gene1, gene2
     else:
         cross_pop = range(1,len(gene1)//2)
@@ -29,7 +29,7 @@ def crossover(gene1: list, gene2: list, prob_crossover):
                 last_cut = cut
         return new_gene1, new_gene2
 
-def mutate(gene: list, mutate_probability):
+def mutate(gene: list, mutate_probability: float):
     for allele in gene:
         if random.uniform(0,1) < mutate_probability:
             allele = not allele

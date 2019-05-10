@@ -1,0 +1,43 @@
+1) a) def penalize_fitness(self):
+        self._fitness = 0
+
+   b) o código penaliza o fitness setando o mesmo como 0, assim qualquer mochila válida com algum item terá um fitness maior
+
+2) a) def repair(self):
+        while self._weight > self._max_weight:
+            value_list = []
+            for key in self._stored_items.keys():
+                value_list.append((key, self._stored_items[key]['value']))
+            value_list.sort(key = secondField)
+
+            self.remove_item(value_list[0][0])
+            self._fitness = self._value
+
+   b) o código repara a mochila tirando o item com o menor valor presente até que seu peso esteja dentro do limite, essa heurística busca tentar diminuir o mínimo possível o fitness da mochila inválida
+
+3) a) os valores variam em função das probabilidades de crossover e mutação e do tamanho da população, porém não muito em relação ao número de gerações neste problema, já que ele converge para um máximo rapidamente
+
+   b) sim a penalização apresenta um resultado sempre pior que a reparação para os mesmos parâmetros, provávelmente devido à sua tendência a matar uma mutação que pode eventualmente causar um ganho
+
+5) a) a melhor reparação encontrou uma mochila com valor 202, e a penalização 197
+
+   b) (n_pop+n_filhos)*n_geracoes, no caso (500+500)*1000 = 1M
+
+   c) a reparacao é bem mais custosa temporalmente, já que tem que ordenar os itens e depois retirar um por um, a penalização em contra partida só realiza uma instrução
+
+6) a) 202
+
+   b) 1 dentro das configurações escolhidas
+
+   c) Backpack:
+      3: Weight = 2, Value = 8
+      8: Weight = 1, Value = 5
+      17: Weight = 3, Value = 8
+      18: Weight = 5, Value = 9
+      28: Weight = 7, Value = 14
+      29: Weight = 19, Value = 32
+      33: Weight = 24, Value = 37
+      37: Weight = 6, Value = 10
+      39: Weight = 25, Value = 40
+      41: Weight = 19, Value = 39
+      Total: Weight = 111, Value = 202
