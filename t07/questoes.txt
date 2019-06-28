@@ -1,0 +1,140 @@
+1 - A relação entre a cor das frutas e quanta energia elas proporcionam.
+
+2 - 
+@relation frutaEnergia.symbolic.training
+
+@attribute c0={K,W}
+@attribute c1={R,G,B}
+@attribute c2={R,G,B}
+@attribute c3={R,G,B}
+@attribute c4={K,W}
+@attribute e={0,2,4}
+
+3 - 900
+
+4 - 
+	0: 276
+	2: 512
+	4: 112
+	
+5 - -276/900*log2(276/900) + -512/900*log2(512/900) + -112/900*log2(112/900) = 0.5229 + 0.463 + 0.3741 = 1.36 bits
+
+6 - 
+c1= = R
+|  c3= = R
+|  |  c2= = R: 4
+|  |  c2= = G: 2
+|  |  c2= = B: 2
+|  c3= = G
+|  |  c2= = R: 2
+|  |  c2= = G: 2
+|  |  c2= = B: 0
+|  c3= = B
+|  |  c2= = R: 2
+|  |  c2= = G: 4
+|  |  c2= = B: 2
+c1= = G
+|  c0= = K
+|  |  c3= = R
+|  |  |  c2= = R: 2
+|  |  |  c2= = G: 2
+|  |  |  c2= = B: 0
+|  |  c3= = G
+|  |  |  c2= = R: 2
+|  |  |  c2= = G: 4
+|  |  |  c2= = B: 2
+|  |  c3= = B
+|  |  |  c2= = R: 0
+|  |  |  c2= = G: 2
+|  |  |  c2= = B: 2
+|  c0= = W: 0
+c1= = B
+|  c2= = R
+|  |  c3= = R: 2
+|  |  c3= = G: 0
+|  |  c3= = B: 2
+|  c2= = G
+|  |  c3= = R: 0
+|  |  c3= = G: 2
+|  |  c3= = B: 2
+|  c2= = B
+|  |  c3= = R: 2
+|  |  c3= = G: 2
+|  |  c3= = B: 4
+
+7 - Não usou c4
+
+8 - Porque c3 tem menos entropia
+E(c3 / c1=b, c2=r) = 30/96*(0log0 + 1log1) + 29/96*(1log1 + 0log0) + 37/96*(0log0 + 1log1) = 0
+E(c4 / c1=b, c2=r) = 58/96*(...) > 0
+
+9 - Porque todas as instâncias pertencem a mesma classe, logo já está decidido.
+
+10 - 
+	a. A matriz de confusão mostra quantas instâncias foram classificadas corretamente para cada classe e quantas foram classificadas incorretamente, indicando qual foi a classe escolhida.
+	As linhas representam qual o valor real da instância e as colunas como foi classificado.
+	Portanto, a diagonal principal são as instâncias classificadas corretamente e o resto é o que foi classificado incorretamente
+	Então, das 13 instâncias com valor '0', 13 foram classificadas corretamente e 2 incorretamente como valor '4'.
+	Das 31 instâncias de '2', 3 foram classificadas como '0', 25 como '2' e 3 como '4'.
+	Das 4 instâncias de '4', 1 foi classificada como '1' e 3 como '4'.
+	=== Confusion Matrix ===
+	  a  b  c   <-- classified as
+	 13  0  2 |  a = 0
+	  3 25  3 |  b = 2
+	  0  1  3 |  c = 4
+
+	b.
+                 TP Rate  FP Rate  Precision  Recall   F-Measure
+                 0.867    0.086    0.813      0.867    0.839
+                 0.806    0.053    0.962      0.806    0.877
+                 0.750    0.109    0.375      0.750    0.500
+Weighted Avg.    0.820    0.067    0.870      0.820
+		A média ponderada tem pesos proporcionais ao número de instâncias de cada classe
+
+		i. TP rate: Dos elementos pertencentes a uma classe 'x', a proporção que foi classificada corretamente como 'x'.
+		Logo, das instâncias pertencentes a '0', 86,7% foram classificadas como '0'.
+		
+		ii. FP rate: Dos elementos que não pertencem a uma classe 'x', a proporção que foi incorretamente classificada como 'x'.
+		Logo, instâncias de '0' e '4', 5,3% foi incorretamente classificada como '2'.
+		
+		iii. Precision: Dos elementos classificados como 'x', a proporção que realmente era 'x'.
+		
+		iv. Recall: Mesma coisa que TP Rate
+		
+		v. f-measure: "Pontuação" da classificação. É a média harmônica de precision e recall.
+		
+11 - A probabilidade do personagem morrer por engano é a probabilidade de que uma fruta classificada como '2' ou '4', na verdade seja da classe '0'.
+Portanto, é o FP rate de '0' (8,6%).
+
+12 - 
+pernas= = 1: H (1.0)
+pernas= = 2
+|   verde= = S: M (1.0)
+|   verde= = N
+|   |   altura= = B
+|   |   |   fedido= = S: M (1.0)
+|   |   |   fedido= = N: H (1.0)
+|   |   altura= = A: H (3.0)
+pernas= = 3: M (3.0)
+
+Marciano = '3 pernas' ou ('2 pernas' e  'verde') ou ('2 pernas' e 'não verde' e 'baixo' e 'fedido')
+Humano = '1 perna' ou ('2 pernas' e 'não verde' e 'baixo' e 'não fedido') ou ('2 pernas' e 'não verde' e 'alto')
+
+13 - 
+pernas <= 1: H (1.0)
+pernas > 1
+|   verde= = S: M (3.0)
+|   verde= = N
+|   |   altura= = B
+|   |   |   fedido= = S: M (2.0)
+|   |   |   fedido= = N: H (1.0)
+|   |   altura= = A: H (3.0)
+
+Marciano = ('perna > 1' e 'verde') ou ('perna > 1' e 'não verde' e 'baixo' e 'fedido')
+Humano = 'perna <= 1' ou ('perna > 1' e 'não verde' e 'baixo' e 'não fedido') ou ('perna > 1' e 'não verde' e 'alto')
+
+14 - O atributo numérico é dividido em 2 partições, enquanto o simbólico é particionado em quantas classes houverem (neste caso, 3).
+
+15 - 
+E(perna <= 1) = -1/1*log1/1 = 0
+E(perna > 1) = -3/9 * log3/9 + -6/9*(-3/6*log3/6 + -3/6*(-2/3*log2/3 + -1/3*log1/3)) = 0.501
