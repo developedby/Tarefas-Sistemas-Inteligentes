@@ -1,3 +1,2 @@
 #!/bin/bash
-export CLASSPATH="../pck_busca:."
-javac sistema/*.java && java sistema.Main
+javac -classpath jFuzzyLogic.jar:../pck_busca:. sistema/*.java && java -classpath jFuzzyLogic.jar:../pck_busca:. sistema.Main

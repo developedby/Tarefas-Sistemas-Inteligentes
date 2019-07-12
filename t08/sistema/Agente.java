@@ -32,7 +32,7 @@ public class Agente implements PontosCardeais {
     public Agente(Model m, Estado estIni, Estado estObj, boolean fuzzy) {
         this.model = m;
         this.fuzzy = fuzzy;
-        
+
         if (fuzzy) {
             this.fis = FIS.load("./comeFruta.fcl",true);
         }
@@ -71,10 +71,10 @@ public class Agente implements PontosCardeais {
             fis.setVariable("energia_fruta", classificaFruta(fruta_atual));
             fis.evaluate();
             // AQUI !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-            double fome = fis.getVariable("fome"); // Acho que nao é asism
+            Variable fome = fis.getVariable("fome"); // Acho que nao é asism
             // ACIMA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            if Math.random() < fome) {
-                comeFruta(this.estAtu)
+            if (Math.random() < fome.defuzzify()) {
+                comeFruta(this.estAtu);
             }
         } else {
             if (Math.random() >= 0.5) {
