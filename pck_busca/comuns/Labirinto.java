@@ -11,6 +11,7 @@ public class Labirinto {
     /*Array que representa o labirinto sendo as posições = 1 aquelas que 
       contêm paredes */
     public int parede[][]; 
+    public char frutas[][][];
     /*Número máximo de colunas do labirinto */
     private final int maxCol;      
     /*Número máximo de linhas do labirinto */
@@ -20,6 +21,7 @@ public class Labirinto {
         this.maxCol = maxColunas;
         this.maxLin = maxLinhas;
         parede = new int[maxLin][maxCol];
+        frutas = new char[maxLin][maxCol][6];
     }
     
     public int getMaxLin() {
@@ -54,5 +56,4 @@ public class Labirinto {
             }
         }
     }
-    
 }
